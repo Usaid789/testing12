@@ -269,7 +269,7 @@
     
 
 // =================================== Round of techniques ===========================================
-var num = 5.9;
+// var num = 5.9;
 // var convertednum = Math.round(num);
 // console.log(convertednum);
 
@@ -366,5 +366,71 @@ var num = 5.9;
 // =========================== Global and local variables ===================================
 // var b = "abc" => Global variable
 // { var b = "abc"} => Local variable
+
+
+
+// ====================================== Switch Case ==============================================
+
+// var day = prompt("Enter your day");
+// switch(day){
+//     case "Sunday":
+//         console.log("Holiday");
+//         break;
+//         case "Saturday":
+//             console.log("Half working day");
+//             break;
+//             default:
+//                 console.log("Working day");
+// }
+
+
+// ============================================ While / Do-while Loops ========================================
+//
+
+// var i=0;
+// while(i<10){
+//     console.log(i);
+//     i++;
+// }
+
+// var i=0;
+// do{
+//      console.log(i);
+//      i++;
+// } while(i < 10);
+
+
+// ================================================ Events ==================================================
+
+var inp = document.getElementById("inp");
+
+// function greet()
+// {
+//    img.src="https://www.springboard.com/blog/wp-content/uploads/2022/01/is-programming-hard-a-guide-to-getting-started-in-2022-scaled-1-scaled.jpeg";
+// }
+
+// function onMouseHover(){
+//     img.src="https://www.springboard.com/blog/wp-content/uploads/2022/01/is-programming-hard-a-guide-to-getting-started-in-2022-scaled-1-scaled.jpeg";
+// }
+// function onMouseOut(){
+//     img.src="https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg"
+// }
+
+function addVal(val){
+    inp.value += val;
+}
+function calculateVal()
+{
+    inp.value = eval(inp.value);
+}
+function clearVal()
+{
+    inp.value = "";
+}
+function goBack(){
+    inp.value = inp.value.slice(0,-1);
+}
+
+
 
 
